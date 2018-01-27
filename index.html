@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Brewiary</title>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.9.0/app.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <br>
+
+    <!-- Jumbotron Title -->
+    <div class="jumbotron">
+      <h1 class="text-center">BREWDiary</h1>
+      <h3 class="text-center">A directory of your favorite beers</h3>
+    </div>
+
+    <!-- Current Employees -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Current Favoirites</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-lg-3">Name</div>
+                  <div class="col-lg-3">Where'd ya get it?</div>
+                  <div class="col-lg-6">What'd ya think?</div>
+                </div>
+              </div>
+              <div class="form-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add an Employee -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Employee</h3>
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="beer-name">Beer Name</label>
+                <input class="form-control" id="beer-name" type="text">
+              </div>
+              <div class="form-group">
+                <label for="location">Where'd ya get it?</label>
+                <input class="form-control" id="location" type="text">
+              </div>
+              <div class="form-group">
+                <label for="your-thoughts">What'd ya think?</label>
+                <input class="form-control" id="your-thoughts" type="text">
+              </div>
+
+              <button class="btn btn-primary" id="add-employee" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
